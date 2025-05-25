@@ -1,8 +1,0 @@
-Options -Indexes
-
-<IfModule mod_headers.c>
-  SetEnvIf Authorization "(.*)" AUTH_HEADER=$1
-  Header set Cache-Control "no-store, no-cache, must-revalidate" env=DEVELOPER_MODE
-  Header set Pragma "no-cache" env=DEVELOPER_MODE
-  Header set Expires "0" env=DEVELOPER_MODE
-</IfModule>
